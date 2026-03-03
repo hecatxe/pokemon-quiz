@@ -1,4 +1,4 @@
-export const preguntas = [
+export const questions = [
   {
     id: 1,
     text: "Te dan un sobre cerrado que contiene la fecha exacta de un evento importante de tu futuro. ¿Qué haces?",
