@@ -1,7 +1,7 @@
 # ˗ˏˋ ⌞Pokémon Quiz⌝ ˎˊ˗
 
-¡Descubre cuál Pokémon de la región de Teselia refleja tu personalidad!  
-Este proyecto es un **quiz interactivo** hecho en **React**, con animaciones y estilo inspirado en la estética Pixel de Pokémon.
+¡Descubre qué Pokémon de la región de Teselia refleja tu personalidad!
+Este proyecto es un **quiz interactivo** hecho en **React.js**, con animaciones y estilo inspirado en la estética Pixel de Pokémon.
 
 ---
 
@@ -17,7 +17,7 @@ Este proyecto es un **quiz interactivo** hecho en **React**, con animaciones y e
 
 ## Tecnologías usadas
 
-- [React](https://reactjs.org/) – biblioteca principal para la interfaz.
+- [React.js](https://reactjs.org/) – biblioteca principal para la interfaz.
 - [Tailwind CSS](https://tailwindcss.com/) – para diseño y estilos.
 - [Framer Motion](https://www.framer.com/motion/) – para animaciones fluidas.
 - **Fuentes Pixel** personalizadas para estética retro.
