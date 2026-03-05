@@ -7,13 +7,20 @@ const OpcionCard = ({ texto, indice, alHacerClick }) => {
       whileHover={{ scale: 1.02, x: 5 }}
       whileTap={{ scale: 0.95 }}
       onClick={alHacerClick}
-      className="group w-full flex items-center p-4 rounded-2xl bg-slate-700/30 border border-slate-600 
-                 hover:bg-slate-600/50 hover:border-emerald-500 transition-all duration-200 text-left shadow-lg"
+      className="
+    group w-full flex items-center p-4 rounded-2xl
+    bg-white/5 backdrop-blur-md
+    border border-white/20
+    text-left text-white
+    shadow-lg shadow-black/40
+    hover:bg-white/10 hover:border-white/30
+    transition-all duration-300
+  "
     >
       <div
-        className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-xl bg-slate-800 
-                      text-slate-400 font-bold border border-slate-700 group-hover:bg-emerald-500 
-                      group-hover:text-slate-900 group-hover:border-emerald-400 transition-colors"
+        className="pokemonSub flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-xl bg-slate-800 
+                      text-slate-400 font-bold border border-slate-700 group-hover:bg-red-800 
+                      group-hover:text-white group-hover:border-white/20 transition-colors"
       >
         {letra}
       </div>

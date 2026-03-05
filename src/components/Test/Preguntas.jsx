@@ -15,14 +15,14 @@ const Preguntas = ({
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -20 }}
       key={preguntaActual}
-      className="w-full max-w-2xl bg-slate-800/80 backdrop-blur-md p-8 rounded-3xl border border-slate-700 shadow-2xl"
+      className="w-full max-w-4xl bg-slate-950/80 backdrop-blur-md p-8 rounded-3xl shadow-2xl"
     >
       <div className="mb-8">
         <div className="flex justify-between items-end mb-2">
-          <span className="text-emerald-400 font-mono text-sm uppercase tracking-widest">
+          <span className="text-red-500 pokemonSub text-sm uppercase tracking-widest">
             Pregunta {preguntaActual + 1} / {totalPreguntas}
           </span>
-          <span className="text-slate-400 text-xs font-bold">
+          <span className="text-slate-400 text-xs font-bold pokemonSub">
             {Math.round(progreso)}% Completado
           </span>
         </div>
@@ -30,16 +30,16 @@ const Preguntas = ({
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: `${progreso}%` }}
-            className="bg-gradient-to-r from-emerald-400 to-cyan-400 h-full"
+            className="bg-gradient-to-r from-red-800 via-red-700 to-white h-full"
           />
         </div>
       </div>
 
-      <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 leading-tight">
+      <h2 className="text-2xl md:text-3xl font-sans text-white mb-8 leading-tight">
         {datosPregunta.text}
       </h2>
 
-      <div className="grid grid-cols-1 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {datosPregunta.options.map((opcion, index) => (
           <OpcionCard
             key={index}
