@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="public/video/Intro.gif" alt="Inicio del test Pokémon" width="500"/>
+</p>
+
+---
+
 # ˗ˏˋ ⌞Pokémon Quiz⌝ ˎˊ˗
 
 ¡Descubre qué Pokémon de la región de Teselia refleja tu personalidad!
