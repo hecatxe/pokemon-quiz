@@ -1,1 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --font-sans: "Noto Sans", sans-serif;
+}
+
+@font-face {
+    font-family: 'PressStart2P';
+    src: url('./assets/font/PressStart2P.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PixelOperator8';
+    src: url('./assets/font/PixelOperator8.woff') format('woff');
+}
+
+.pokemonTitle {
+    font-family: 'PressStart2P', sans-serif;
+}
+
+.pokemonSub {
+    font-family: 'PixelOperator8', sans-serif;
+}

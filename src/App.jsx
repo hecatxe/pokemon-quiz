@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import {getPokemonFinal} from "./utils/ingResultado";
+import { getPokemonFinal } from "./utils/ingResultado";
 import PokemonCard from "./components/Resultado/PokemonCard";
 import Preguntas from "./components/Test/Preguntas";
 import { questions } from "./data/preguntas";
@@ -33,35 +33,64 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
-      {inicio == 0 && (
-        <div className="text-center space-y-6">
-          <h1 className="text-5xl font-extrabold tracking-tight bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-            ¿Qué Pokémon de Teselia eres?
-          </h1>
-          <p className="text-slate-400 text-lg">
-            Descubre tu identidad en la 5ª Generación
-          </p>
-          <button
-            className="px-8 py-3 bg-white text-slate-900 font-bold rounded-full hover:scale-105 transition-transform shadow-xl shadow-white/10"
-            onClick={() => setInicio(1)}
-          >
-            Empezar Test
-          </button>
-        </div>
-      )}
+    <div className="relative min-h-screen flex items-center justify-center p-4 overflow-hidden">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+      >
+        <source src="/video/pokemon-bg.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-black/30"></div>
+      <div className="relative z-10">
+        {inicio == 0 && (
+          <div className="text-center space-y-6">
+            <h1 className="pokemonTitle text-4xl text-white font-bold">
+              ¿Qué{" "}
+              <span className="bg-gradient-to-r from-red-600 via-red-500 to-white bg-clip-text text-transparent">
+                Pokémon
+              </span>{" "}
+              de Teselia eres?
+            </h1>
+            <p className="text-black-400 text-lg font-sans">
+              Descubre qué criatura de la quinta generación refleja tu
+              personalidad.
+            </p>
+            <button
+              className="
+  px-10 py-3
+  text-white font-semibold
+  rounded-full
+  bg-white/10
+  backdrop-blur-md
+  border border-white/20
+  shadow-lg shadow-black/30
+  hover:bg-white/20
+  hover:scale-105
+  transition-all duration-300
+  font-sans
+  "
+              onClick={() => setInicio(1)}
+            >
+              Empezar Test
+            </button>
+          </div>
+        )}
 
-      {inicio === 1 && (
-        <Preguntas
-          preguntaActual={actualPregunta}
-          totalPreguntas={questions.length}
-          datosPregunta={questions[actualPregunta]}
-          alResponder={manejarRespuesta}
-        />
-      )}
-      {inicio === 2 && pokemonFinal && (
-        <PokemonCard pokemon={pokemonFinal} onRestart={resetear} />
-      )}
+        {inicio === 1 && (
+          <Preguntas
+            preguntaActual={actualPregunta}
+            totalPreguntas={questions.length}
+            datosPregunta={questions[actualPregunta]}
+            alResponder={manejarRespuesta}
+          />
+        )}
+        {inicio === 2 && pokemonFinal && (
+          <PokemonCard pokemon={pokemonFinal} onRestart={resetear} />
+        )}
+      </div>
     </div>
   );
 }
