@@ -49,7 +49,7 @@ function App() {
           <div className="text-center space-y-6">
             <h1 className="pokemonTitle text-4xl text-white font-bold">
               ¿Qué{" "}
-              <span className="bg-gradient-to-r from-red-600 via-red-500 to-white bg-clip-text text-transparent">
+              <span className="bg-red-600 bg-clip-text text-transparent">
                 Pokémon
               </span>{" "}
               de Teselia eres?
