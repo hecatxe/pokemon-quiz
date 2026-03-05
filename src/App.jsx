@@ -54,7 +54,7 @@ function App() {
               </span>{" "}
               de Teselia eres?
             </h1>
-            <p className="text-black-400 text-lg font-sans">
+            <p className="text-black-400 text-lg pokemonSub">
               Descubre qué criatura de la quinta generación refleja tu
               personalidad.
             </p>
@@ -90,6 +90,17 @@ function App() {
         {inicio === 2 && pokemonFinal && (
           <PokemonCard pokemon={pokemonFinal} onRestart={resetear} />
         )}
+      </div>
+      <div className="absolute bottom-4 right-4 text-white text-sm opacity-60">
+        <span className="pokemonSub inline-flex items-center space-x-1 gap-1">
+          Hecho con
+          <img
+            src="/img/corazon-pixel.png"
+            alt="corazón"
+            className="w-7 h-7 transition-transform duration-300 hover:scale-125"
+          />
+          por Fátima
+        </span>
       </div>
     </div>
   );
