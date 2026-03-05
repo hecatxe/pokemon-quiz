@@ -24,7 +24,7 @@ const PokemonCard = ({ pokemon, onRestart }) => {
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
               src={imageUrl}
               alt={pokemon.nombre}
-              className=" w-45 h-45 object-contain relative z-10 drop-shadow-[0_20px_30px_rgba(0,0,0,0.5)]"
+              className=" w-55 h-55 object-contain relative z-10 drop-shadow-[0_20px_30px_rgba(0,0,0,0.5)]"
             />
           </div>
 
