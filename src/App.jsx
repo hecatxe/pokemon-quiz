@@ -57,7 +57,7 @@ function App() {
             <p className="text-white md:text-black lg:text-black 
               text-lg pokemonSub
               md:bg-transparent bg-black/50 lg:bg-transparent p-2 rounded rounded-2xl">
-              Descubre qué Pokemon de la quinta generación refleja tu
+              Descubre qué Pokémon de la quinta generación refleja tu
               personalidad.
             </p>
             <button
