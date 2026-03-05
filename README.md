@@ -20,6 +20,7 @@ Este proyecto es un **quiz interactivo** hecho en **React.js**, con animaciones 
 - [React.js](https://reactjs.org/) – biblioteca principal para la interfaz.
 - [Tailwind CSS](https://tailwindcss.com/) – para diseño y estilos.
 - [Framer Motion](https://www.framer.com/motion/) – para animaciones fluidas.
+- Imágenes y sprites de Pokémon obtenidos de [PokéAPI](https://pokeapi.co/)
 - **Fuentes Pixel** personalizadas para estética retro.
 - Video de fondo y PNGs de íconos para UI llamativa.
 
