@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/video/Intro.gif" alt="Inicio del test Pokémon" width="500"/>
+  <img src="public/video/Intro.gif" alt="Inicio del test Pokémon" width="900"/>
 </p>
 
 ---
