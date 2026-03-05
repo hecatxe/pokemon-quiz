@@ -55,7 +55,7 @@ function App() {
               de Teselia eres?
             </h1>
             <p className="text-black-400 text-lg pokemonSub">
-              Descubre qué criatura de la quinta generación refleja tu
+              Descubre qué pokemon de la quinta generación refleja tu
               personalidad.
             </p>
             <button
